@@ -73,7 +73,8 @@ Note: If you pay 150Rs, you'll become VIP1 instead of VIP2.
 
 **After payment:**
 1. Gpay: with your order number `/vip (oder id)`
-    settings = """
+    
+   settings = """
 Select sending format and video quality. **Only applies to YouTube**
 High quality is recommended; Medium quality is aimed as 480P while low quality is aimed as 360P and 240P.
     
