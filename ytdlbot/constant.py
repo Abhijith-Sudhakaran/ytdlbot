@@ -71,11 +71,8 @@ Note: If you pay 150Rs, you'll become VIP1 instead of VIP2.
 1. Gpay : Abhijith Sudhakaran 🇮🇳 upi id : 
 2. Chat With Me on Telegram @Telecat_X (Malayalam, English)
 
-**After payment:**
-1. Gpay: with your order number `/vip (oder id)`
-    
-   settings = """
-Select sending format and video quality. **Only applies to YouTube**
+settings = """
+Select sending format and video quality. Only applies to YouTube.
 High quality is recommended; Medium quality is aimed as 480P while low quality is aimed as 360P and 240P.
     
 Remember if you choose to send as document, there will be no streaming. 
