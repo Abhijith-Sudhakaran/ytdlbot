@@ -17,7 +17,7 @@ from utils import get_func_queue, get_queue_stat
 
 
 class BotText:
-    start = "Hey {message.from_user.mention()} !\n**Welcome, I am a Simple YouTube Downloader bot which Downloads YouTube video with High Quality and High Speed.** \n\n__Just Type /help for more information.__"
+    start = "Welcome to YouTube Download bot. Type /help for more information."
 
     help = f"""
 1. This bot should works at all times. 
@@ -34,7 +34,7 @@ every one can use this bot within **{sizeof_fmt(QUOTA)} of quota for every {int(
 5. Source code for this bot will always stay open, here-> https://github.com/tgbot-collection/ytdlbot
     """ if ENABLE_VIP else "Help text"
 
-    about = "YouTube-DL by @Telecat_X. Currently Closed source on GitHub bcz of High Maintenance. Releasing Soon..!"
+    about = "YouTube-DL by @BennyThink. Open source on GitHub: https://github.com/tgbot-collection/ytdlbot"
 
     terms = f"""
 1. You can use this service, free of charge, {sizeof_fmt(QUOTA)} per {int(EX / 3600)} hours.
@@ -65,14 +65,24 @@ For example, if you download a video of 1GB, your current quota will be 9GB inst
 3. VIP2: ${MULTIPLY * 2} or ¥{MULTIPLY * USD2CNY * 2}, {sizeof_fmt(QUOTA * 5 * 2)} per {int(EX / 3600)} hours
 4. VIP4....VIPn.
 5. Unlimited streaming conversion support.
-Note: If you pay 150Rs, you'll become VIP1 instead of VIP2.
+Note: If you pay $9, you'll become VIP1 instead of VIP2.
 
 **Payment method:**
-1. Gpay : Abhijith Sudhakaran 🇮🇳 upi id : 
-2. Chat With Me on Telegram @Telecat_X (Malayalam, English)
+1. (afdian) Mainland China: {AFD_LINK}
+2. (buy me a coffee) Other countries or regions: {COFFEE_LINK}
+__I live in a place where I don't have access to Telegram Payments. So...__
 
-settings =f"""
-Select sending format and video quality. Only applies to YouTube.
+**After payment:**
+1. afdian: with your order number `/vip 123456`
+2. buy me a coffee: with your email `/vip someone@else.com`
+    """ if ENABLE_VIP else "VIP is not enabled."
+    vip_pay = "Processing your payments...If it's not responding after one minute, please contact @BennyThink."
+
+    private = "This bot is for private use"
+    membership_require = f"You need to join this group or channel to use this bot\n\nhttps://t.me/{REQUIRED_MEMBERSHIP}"
+
+    settings = """
+Select sending format and video quality. **Only applies to YouTube**
 High quality is recommended; Medium quality is aimed as 480P while low quality is aimed as 360P and 240P.
     
 Remember if you choose to send as document, there will be no streaming. 
